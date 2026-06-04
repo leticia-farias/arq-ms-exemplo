@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Apigateway2Application",
+      "request": "launch",
+      "mainClass": "com.tecshsphere.apigateway2.Apigateway2Application",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServiceDescoveryApplication<service-descovery>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.leticiafarias.service_descovery.ServiceDescoveryApplication",
+      "projectName": "service-descovery",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=64964 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service-descovery"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-HelloApiApplication<hello-api>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.techsphere.hello_api.HelloApiApplication",
+      "projectName": "hello-api",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61007 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=hello-api"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ApigatewayApplication<apigateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.techsphere.apigateway.ApigatewayApplication",
+      "projectName": "apigateway",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61019 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=apigateway"
+    }
+  ]
+}
